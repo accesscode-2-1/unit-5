@@ -17,9 +17,9 @@
 11 | Sat, Nov 21 | 2 | Design Patterns & Testing
 12 | Sun, Nov 22 | 3 | Server-Side Development, End to End
 13 | Tues, Nov 24 | 3 | TBD
-14 | Thurs, Nov 26 | 3 | Thanksgiving Break
-15 | Sat, Nov 28 | 3 | Thanksgiving Break
-16 | Sun, Nov 29 | 4 | Thanksgiving Break
+14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
+15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
+16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
 17 | Tues, Dec 1 | 4 | 
 18 | Thurs, Dec 3 | 4 |
 19 | Sat, Dec 5 | 4 | Final Mock Interviews
