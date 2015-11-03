@@ -4,7 +4,7 @@
 
  # |  Date | Week | Lesson |
 |---|---|---|---|
-1 | Tues, Nov 3 | 0 | Sorting Part III 
+1 | Tues, Nov 3 | 0 | Recursion 
 2 | Thurs, Nov 5 | 0 | Mock Interviews
 3 | Sat, Nov 7 | 0 | HTTP and SSL
 4 | Sun, Nov 8 | 1 | Graphs
@@ -32,5 +32,5 @@
 
 ### Homework
 | Due Date | Homework| Homework Solutions |  
-|---|---|---|
+|11/5|[Recursion Problem](https://dl.dropboxusercontent.com/u/24773027/Screen%20Shot%202015-11-03%20at%2011.40.57%20AM.png)|---|
 |--- |---|---| 
