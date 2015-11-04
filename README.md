@@ -31,6 +31,5 @@
 
 
 ### Homework
-| Due Date | Homework| Homework Solutions |  
-|11/5|[Recursion Problem](https://dl.dropboxusercontent.com/u/24773027/Screen%20Shot%202015-11-03%20at%2011.40.57%20AM.png)  [SUBMIT HERE](https://docs.google.com/a/c4q.nyc/forms/d/1YiTdPmpyeXA_u2RWfbLM3YqdDPCJEPQoPPe_aLYHMLM/viewform)|---|
-|--- |---|---| 
+Due Date | Homework| Homework Solutions 
+11/5|[Recursion Problem](https://dl.dropboxusercontent.com/u/24773027/Screen%20Shot%202015-11-03%20at%2011.40.57%20AM.png)  [SUBMIT HERE](https://docs.google.com/a/c4q.nyc/forms/d/1YiTdPmpyeXA_u2RWfbLM3YqdDPCJEPQoPPe_aLYHMLM/viewform)|---
