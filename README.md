@@ -27,7 +27,7 @@
 21 | Tues, Dec 8 | 5 |
 22 | Thurs, Dec 10 | 5 |
 23 | Sat, Dec 12 | 5 |
-24 | Sun, Nov 13 | x | LAST DAY OF CLASS
+24 | Sun, Dec 13 | x | LAST DAY OF CLASS
 
 
 ### Homework
