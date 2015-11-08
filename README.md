@@ -7,7 +7,7 @@
 1 | Tues, Nov 3 | 0 | Recursion 
 2 | Thurs, Nov 5 | 0 | Mock Interviews
 3 | Sat, Nov 7 | 0 | HTTP and SSL
-4 | Sun, Nov 8 | 1 | Graphs
+4 | Sun, Nov 8 | 1 | Graphs and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk) 
 5 | Tues, Nov 10 | 1 | Object Oriented Programming Review
 6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io
 7 | Sat, Nov 14 | 1 | Authentication and Authorization
