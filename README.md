@@ -7,7 +7,7 @@
 1 | Tues, Nov 3 | 0 | Recursion 
 2 | Thurs, Nov 5 | 0 | Mock Interviews
 3 | Sat, Nov 7 | 0 | Review on Trees [HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_cmJWU0hLOVdCVFk/view?usp=sharing)
-4 | Sun, Nov 8 | 1 | Graphs I [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk) 
+4 | Sun, Nov 8 | 1 | Graphs I and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk.pdf)
 5 | Tues, Nov 10 | 1 | Object Oriented Programming Review
 6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io
 7 | Sat, Nov 14 | 1 | Authentication and Authorization
