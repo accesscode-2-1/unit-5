@@ -6,8 +6,8 @@
 |---|---|---|---|
 1 | Tues, Nov 3 | 0 | Recursion 
 2 | Thurs, Nov 5 | 0 | Mock Interviews
-3 | Sat, Nov 7 | 0 | HTTP and SSL
-4 | Sun, Nov 8 | 1 | Graphs and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk) 
+3 | Sat, Nov 7 | 0 | Review on Trees [HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_cmJWU0hLOVdCVFk/view?usp=sharing)
+4 | Sun, Nov 8 | 1 | Graphs I [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk) 
 5 | Tues, Nov 10 | 1 | Object Oriented Programming Review
 6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io
 7 | Sat, Nov 14 | 1 | Authentication and Authorization
@@ -27,10 +27,11 @@
 21 | Tues, Dec 8 | 5 |
 22 | Thurs, Dec 10 | 5 |
 23 | Sat, Dec 12 | 5 |
-24 | Sun, Nov 13 | x | LAST DAY OF CLASS
+24 | Sun, Dec 13 | x | LAST DAY OF CLASS
 
 
 ### Homework
-| Due Date | Homework| Homework Solutions |  
-|11/5|[Recursion Problem](https://dl.dropboxusercontent.com/u/24773027/Screen%20Shot%202015-11-03%20at%2011.40.57%20AM.png)|---|
-|--- |---|---| 
+ Due Date | Homework | Solution |
+|---|---|---|
+11/5|[Recursion Problem](https://dl.dropboxusercontent.com/u/24773027/Screen%20Shot%202015-11-03%20at%2011.40.57%20AM.png)  [SUBMIT HERE](https://docs.google.com/a/c4q.nyc/forms/d/1YiTdPmpyeXA_u2RWfbLM3YqdDPCJEPQoPPe_aLYHMLM/viewform)|---
+11/10|[HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_YjE1SUkxU2hrRkU/view?usp=sharing)  [SUBMIT HERE]|---
