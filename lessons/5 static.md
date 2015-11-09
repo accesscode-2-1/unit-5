@@ -4,7 +4,9 @@
 
 Date: 10 November 2015
 
-FIXME
+In this lesson, we'll examine **static** fields, methods, and initializers and how they relate to each other.  We'll consider some common idioms for using them, and also some anti-patterns.
+
+If time permits, we'll look at the two ways Java provides to put a class inside another class: **nested classes** and **inner classes**.
 
 ## Static fields
 
@@ -154,7 +156,9 @@ static {
 }
 
 public static BigDecimal fibonacci(int n) {
-    if (cache.size() <= n) {
+    if (n < 1)
+        throw new IllegalArgumentException("n must be positive");
+    else if (cache.size() <= n) {
         final BigDecimal result = fibonacci(n - 2).add(fibonacci(n - 1));
         cache.add(n, result);
         return result;
@@ -166,8 +170,10 @@ public static BigDecimal fibonacci(int n) {
 
 A static initializer is run right before the first time a class is used in any way.
 
-> :dart: **Exercise:** The <code>Math.sqrt()</code> method is relatively slow compared to many other math functions.  Write a class that precomputes the square roots of the numbers 0 through 100 in a static list.  Using this array, provide a <code>fastSqrt()</code> method that takes an integer and uses the list to provide a fast square root result.  If the paramter is not between 0 and 100, fall back to <code>Math.sqrt()</code>.
+> :dart: **Exercise:** The <code>Math.sqrt()</code> method is relatively slow compared to many other math functions.  Write a class that precomputes the square roots of the numbers 0 through 100 in a static list.  Using this array, provide a <code>fastSqrt()</code> method that takes an integer and uses the list to provide a fast square root result.  If the parameter is not between 0 and 100, fall back to <code>Math.sqrt()</code>.
 
 ## Nested classes
+
+
 
 ## Inner classes
