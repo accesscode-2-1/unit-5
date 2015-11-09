@@ -4,11 +4,11 @@
 
  # |  Date | Week | Lesson |
 |---|---|---|---|
-1 | Tues, Nov 3 | 0 | Recursion 
+1 | Tues, Nov 3 | 0 | Recursion
 2 | Thurs, Nov 5 | 0 | Mock Interviews
 3 | Sat, Nov 7 | 0 | Review on Trees [HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_cmJWU0hLOVdCVFk/view?usp=sharing)
 4 | Sun, Nov 8 | 1 | Graphs I and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk.pdf)
-5 | Tues, Nov 10 | 1 | Static methods
+5 | Tues, Nov 10 | 1 | [Static](lessons/5 static.md)
 6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io
 7 | Sat, Nov 14 | 1 | Authentication and Authorization
 8 | Sun, Nov 15 | 2 | Tackling Bugs & Performance Issues
@@ -20,7 +20,7 @@
 14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
-17 | Tues, Dec 1 | 4 | 
+17 | Tues, Dec 1 | 4 |
 18 | Thurs, Dec 3 | 4 |
 19 | Sat, Dec 5 | 4 | Final Mock Interviews
 20 | Sun, Dec 6 | 5 | Final Mock Interviews
