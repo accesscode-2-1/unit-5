@@ -61,13 +61,82 @@ A method may also be marked `static`.  A **static method** executes independent 
 2. Non-static fields are not accessible.  However, static fields are.
 3. Non-static methods may not be called.  However, other static methods may be.
 
-> :dart: **Exercise:** Write a class called <code>Dice</code>.  Its constructor takes a number of dice, and it has a <code>roll()</code> that simulates rolling that many decide, and returns the total.  Also keep count of how many times the dice have been rolled, and provide a static accessor for this count.
-
 The `main()` method must always be static.  That's because Java runs it before creating any instances of any classes.
 
 > :star: **Hint:** Most programming languages allow you to define a function outside of a class; however, Java does not.  Many Java programmers group such functions together into a class or classes containing only static methods, which behave essentially as functions outside of a class.  There's no point in instantiating such a class, as all of its methods are directly accessible without an instance  The `Math` class is an example of this.
 
-When should you use static methods? This is a complex question, and answers are sometimes contentious. See, for example, [this StackOverflow question](http://stackoverflow.com/questions/2671496/java-when-to-use-static-methods).
+## Using static
+
+When should you use static methods? This is a complex question, and answers are sometimes contentious: see, for example, [this StackOverflow question](http://stackoverflow.com/questions/2671496/java-when-to-use-static-methods).
+
+> :star: **Hint:** Just as you use accessors to control access to instance fields, it's a good idea to use static accessors to control access to static fields. An exception to this is static final fields, _i.e._ constants, which are usually safe to access directly.
+
+### Unique objects
+
+Often, static methods are used to model a unique item.  For example, if your application accesses the Google Play Store, you might model the Store with an object in a static field.
+
+But be careful! What's unique today might not be unique tomorrow.
+
+- If you store your database connection in a static field, what happens if you want to connect to two databases in the future?
+
+- If you represent your user's screen in a static field, what happens if the user runs on a decide with two screens?
+
+- If you store the player of your game in a static field, what if you decide to make your game multiplayer in the future?
+
+### Counters and unique IDs
+
+A static field and static accessor method is a good way to generate a counter value or other ID unique in your code.
+
+* :dart: **Exercise:** Write a static method that returns a social security number.  Make sure your method won't return the same number twice.
+
+### Pure functions
+
+One common use is for a **pure function**. A pure function's behavior depends entirely on its arguments, not on any other state&mdash;including the state of any class instance. Since it doesn't need an instance, it can be made static.
+
+Here's an example you've already seen: our old friend, the Fibonacci series.
+
+```java
+public static BigDecimal fibonacci(int n) {
+    if (n < 1)
+        throw new IllegalArgumentException("n must be positive");
+    else if (n <= 2)
+        return BigDecimal.ONE;
+    else
+        return fibonacci(n - 2).add(fibonacci(n - 1));
+}
+```
+
+As you can see, a static method can call other _static_ methods, including itself&mdash;so it can be recursive.
+
+### Caching
+
+A common use for static fields is for caching.  A **cache** is a result stored so that it can be accessed quickly in the future, rather than recomputed.
+
+```java
+public static BigDecimal fibonacci(int n) {
+    if (n < 1)
+        throw new IllegalArgumentException("n must be positive");
+    else if (n <= 2)
+        return BigDecimal.ONE;
+    else {
+        BigDecimal result = cache.get(n);
+        if (result == null) {
+            result = fibonacci(n - 2).add(fibonacci(n - 1));
+            cache.put(n, result);
+        }
+        return result;
+    }
+}
+
+private static Map<Integer, BigDecimal> cache = new HashMap<Integer, BigDecimal>();
+```
+
+### Metrics
+
+Another common use for static fields and methods is for storing counters and other measurements of a program's behavior.
+
+> :dart: **Exercise:** Write a class called <code>Dice</code>.  Its constructor takes a number of dice, and it has a <code>roll()</code> that simulates rolling that many decide, and returns the total.  Also keep count of how many times the dice have been rolled, and provide a static accessor for this count.
+
 
 ## Static initializers
 
@@ -76,28 +145,22 @@ The value of a dynamic field can be initialized in the class's constructor. This
 An initialer block may be marked `static`, called a **static initializer**.  This is useful to perform complex initialization of static fields.
 
 ```java
-public class Store {
-    // ...
+private static Vector<BigDecimal> cache = new Vector<BigDecimal>();
 
-    public static final URL STORE_URL;
+static {
+    cache.add(0, null);
+    cache.add(1, BigDecimal.ONE);
+    cache.add(2, BigDecimal.ONE);
+}
 
-    static {
-        String country = Locale.getDefault().getCountry();
-        System.out.println(country);
-        String url;
-        if (country == "US")
-            url = "http://play.google.com";
-        else if (country == "UK")
-            url = "http://play.google.co.uk";
-        else
-            throw new RuntimeException("no Play in " + country);
-
-        try {
-            STORE_URL = new URL(url);
-        } catch (MalformedURLException e) {
-            throw new RuntimeException("wonky Play URL");
-        }
+public static BigDecimal fibonacci(int n) {
+    if (cache.size() <= n) {
+        final BigDecimal result = fibonacci(n - 2).add(fibonacci(n - 1));
+        cache.add(n, result);
+        return result;
     }
+    else
+        return cache.get(n);
 }
 ```
 
