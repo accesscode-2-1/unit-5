@@ -6,7 +6,7 @@ Date: 10 November 2015
 
 In this lesson, we'll examine **static** fields, methods, and initializers and how they relate to each other.  We'll consider some common idioms for using them, and also some anti-patterns.
 
-If time permits, we'll look at the two ways Java provides to put a class inside another class: **nested classes** and **inner classes**.
+If time permits, we'll look at some ways Java provides to put a classes inside another classes.
 
 ## Static fields
 
@@ -179,8 +179,74 @@ A static initializer is run right before the first time a class is used in any w
 
 > :dart: **Exercise:** The <code>Math.sqrt()</code> method is relatively slow compared to many other math functions.  Write a class that precomputes the square roots of the numbers 0 through 100 in a static list.  Using this array, provide a <code>fastSqrt()</code> method that takes an integer and uses the list to provide a fast square root result.  If the parameter is not between 0 and 100, fall back to <code>Math.sqrt()</code>.
 
-## Nested classes
+## Organizing classes
 
+Most of the Java classes we've seen so far have been **top-level classes**. Each is defined in a separate Java source file, whose name matches the name of the class.  Java lets us put classes in other places too, though.
 
+Why might you want to do this?
+
+- _For organization._ If a class is used only from within another class it may make sense to put it there.
+
+- _To implement interfaces._ Many Java APIs require you to implement a small interface. These implementations are generally used in one place only, so it's best to keep them local.
+
+### Inner classes
+
+The `java.lang.Runnable` class is a very simple and frequently-used interface. It represents some action that can be run, and has only one method, `run()`. Usually, the runnable is used in one class only, so we can 
+
+```java
+public class ThreadExample {
+    private static class Task implements Runnable {
+        @Override
+        public void run() {
+            System.out.println("starting");
+            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+            System.out.println("finishing");
+        }
+    }
+
+    public static void main(String args[]) {
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Task()).start();
+    }
+}
+```
+
+### Local classes
+
+```java
+public class ThreadExample {
+    public static void main(String args[]) {
+        class Task implements Runnable {
+            @Override
+            public void run() {
+                System.out.println("starting");
+                try { Thread.sleep(1000); } catch (InterruptedException e) {}
+                System.out.println("finishing");
+            }
+        }
+
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Task()).start();
+    }
+}
+```
+
+## Anonymous classes
+
+```java
+public class ThreadExample {
+    public static void main(String args[]) {
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("starting");
+                    try { Thread.sleep(1000); } catch (InterruptedException e) {}
+                    System.out.println("finishing");
+                }
+            }).start();
+    }
+}
+```
 
 ## Inner classes
