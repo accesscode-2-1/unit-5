@@ -231,7 +231,7 @@ public class ThreadExample {
 }
 ```
 
-## Anonymous classes
+### Anonymous classes
 
 ```java
 public class ThreadExample {
@@ -248,5 +248,3 @@ public class ThreadExample {
     }
 }
 ```
-
-## Inner classes
