@@ -11,16 +11,15 @@ FIXME
 Generally, the value of a field is specific to each instance of the class; _i.e._ each instance may have its own value of the field.  A field marked `static`, however, is not part of an instance, but rather of the class.  As such, it takes a single value no matter which instance it's used from.
 
 ```java
-public abstract class Product {
-    Product() {
-        this.id = nextId;
-        nextId++;
+public class Value {
+    public Value(int val) {
+        if (val > max)
+            max = val;
+        this.val = val;
     }
 
-    // ...
-
-    private static long nextId = 0;
-    private final long id;
+    private int val;
+    public static int max;
 }
 ```
 
@@ -29,15 +28,9 @@ public abstract class Product {
 A field may be both `static` and `final`; this usually used to store a **constant**.  A constant field conventionally has an UPPERCASE\_WITH\_UNDERSCORES name.  
 
 ```java
-public class Album extends Product {
-    static final double STANDARD_PRICE = 8.99;
-
-    @Override
-    public double getPrice() {
-        return STANDARD_PRICE;
-    }
-
-    // ...
+public class Application {
+    public static final String NAME = "Angry Birds";
+    public static final Date RELEASE_DATE = new Date(2009, 12, 5);
 }
 ```
 
@@ -46,12 +39,11 @@ public class Album extends Product {
 You can access a static field inside an instance of a class, through a instance, or directly from the class itself.
 
 ```java
-Store store = new Store();
-System.out.println(store.URL);
-System.out.println(Store.URL);
-```
+System.out.println(Application.NAME);
 
-> :star: **Hint:** A non-final static field should almost never be `public`.  If necessary, provide a static accessor method.
+Application app = new App();
+System.out.println(app.NAME);
+```
 
 ## Static methods
 
@@ -63,13 +55,26 @@ A method may also be marked `static`.  A **static method** executes independent 
 
 The `main()` method must always be static.  That's because Java runs it before creating any instances of any classes.
 
-> :star: **Hint:** Most programming languages allow you to define a function outside of a class; however, Java does not.  Many Java programmers group such functions together into a class or classes containing only static methods, which behave essentially as functions outside of a class.  There's no point in instantiating such a class, as all of its methods are directly accessible without an instance  The `Math` class is an example of this.
-
 ## Using static
 
 When should you use static methods? This is a complex question, and answers are sometimes contentious: see, for example, [this StackOverflow question](http://stackoverflow.com/questions/2671496/java-when-to-use-static-methods).
 
 > :star: **Hint:** Just as you use accessors to control access to instance fields, it's a good idea to use static accessors to control access to static fields. An exception to this is static final fields, _i.e._ constants, which are usually safe to access directly.
+
+```java
+public class Value {
+    public Value(int val) {
+        if (val > max)
+            max = val;
+        this.val = val;
+    }
+
+    public static int getMax() { return max; }
+
+    private int val;
+    private static int max;
+}
+```
 
 ### Unique objects
 
@@ -107,6 +112,8 @@ public static BigDecimal fibonacci(int n) {
 ```
 
 As you can see, a static method can call other _static_ methods, including itself&mdash;so it can be recursive.
+
+> :star: **Hint:** Most programming languages allow you to define a function outside of a class; however, Java does not.  Many Java programmers group such functions together into a class or classes containing only static methods, which behave essentially as functions outside of a class.  There's no point in instantiating such a class, as all of its methods are directly accessible without an instance  The [`java.lang.Math`](http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html) class is an example of this.
 
 ### Caching
 
