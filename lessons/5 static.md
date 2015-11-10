@@ -94,7 +94,7 @@ But be careful! What's unique today might not be unique tomorrow.
 
 A static field and static accessor method is a good way to generate a counter value or other ID unique in your code.
 
-* :dart: **Exercise:** Write a static method that returns a social security number.  Make sure your method won't return the same number twice.
+> :dart: **Exercise:** Write a static method that returns a social security number.  Make sure your method won't return the same number twice.
 
 ### Pure functions
 
