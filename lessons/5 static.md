@@ -6,7 +6,7 @@ Date: 10 November 2015
 
 In this lesson, we'll examine **static** fields, methods, and initializers and how they relate to each other.  We'll consider some common idioms for using them, and also some anti-patterns.
 
-If time permits, we'll look at some ways Java provides to put a classes inside another classes.
+If time permits, we'll look at some ways Java provides to put a class inside another class.
 
 ## Static fields
 
