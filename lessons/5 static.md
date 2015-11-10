@@ -256,3 +256,5 @@ public class ThreadExample {
     }
 }
 ```
+
+> :star: **Hint:** If you're interested in learning more about programming with threads, the canonical book is [_Java Concurrency In Practice_](http://jcip.net.s3-website-us-east-1.amazonaws.com/).
