@@ -9,7 +9,7 @@
 3 | Sat, Nov 7 | 0 | Review on Trees, [HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_VkFWdWhSNXhSaTA/view?usp=sharing)
 4 | Sun, Nov 8 | 1 | [Graphs I](https://drive.google.com/file/d/0B0eZ0hF8kDy_QzdFQ1RMbE43MHM/view?usp=sharing) and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk.pdf) [(Resources)](/speakers/Val_resources) 
 5 | Tues, Nov 10 | 1 | [Static](lessons/5 static.md)
-6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io [(Slides)](/sperakers/underdog_deck.pdf)
+6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io [(Slides)](/speakers/underdog_deck.pdf)
 7 | Sat, Nov 14 | 1 | Authentication and Authorization
 8 | Sun, Nov 15 | 2 | Tackling Bugs & Performance Issues
 9 | Tues, Nov 17 | 2 | Object Oriented Programming Review
