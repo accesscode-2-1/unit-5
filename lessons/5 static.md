@@ -6,7 +6,7 @@ Date: 10 November 2015
 
 In this lesson, we'll examine **static** fields, methods, and initializers and how they relate to each other.  We'll consider some common idioms for using them, and also some anti-patterns.
 
-If time permits, we'll look at the two ways Java provides to put a class inside another class: **nested classes** and **inner classes**.
+If time permits, we'll look at some ways Java provides to put a class inside another class.
 
 ## Static fields
 
@@ -94,7 +94,7 @@ But be careful! What's unique today might not be unique tomorrow.
 
 A static field and static accessor method is a good way to generate a counter value or other ID unique in your code.
 
-* :dart: **Exercise:** Write a static method that returns a social security number.  Make sure your method won't return the same number twice.
+> :dart: **Exercise:** Write a static method that returns a social security number.  Make sure your method won't return the same number twice.
 
 ### Pure functions
 
@@ -179,8 +179,82 @@ A static initializer is run right before the first time a class is used in any w
 
 > :dart: **Exercise:** The <code>Math.sqrt()</code> method is relatively slow compared to many other math functions.  Write a class that precomputes the square roots of the numbers 0 through 100 in a static list.  Using this array, provide a <code>fastSqrt()</code> method that takes an integer and uses the list to provide a fast square root result.  If the parameter is not between 0 and 100, fall back to <code>Math.sqrt()</code>.
 
-## Nested classes
+## Organizing classes
 
+Most of the Java classes we've seen so far have been **top-level classes**. Each is defined in a separate Java source file, whose name matches the name of the class.  Java lets us put classes in other places too, though.
 
+Why might you want to do this?
 
-## Inner classes
+- _For organization._ If a class is used only from within another class it may make sense to put it there.
+
+- _To implement interfaces._ Many Java APIs require you to implement a small interface. These implementations are generally used in one place only, so it's best to keep them local.
+
+### Nested classes
+
+The `java.lang.Runnable` class is a very simple and frequently-used interface. It represents some action that can be run, and has only one method, `run()`. Usually, the runnable is used in one class only, so we can define it as a **static nested class**.
+
+```java
+public class ThreadExample {
+    private static class Task implements Runnable {
+        @Override
+        public void run() {
+            System.out.println("starting");
+            try { Thread.sleep(1000); } catch (InterruptedException e) {}
+            System.out.println("finishing");
+        }
+    }
+
+    public static void main(String args[]) {
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Task()).start();
+    }
+}
+```
+
+> :star: **Hint:** Java also allows non-static nested classes, often called **inner classes**. Each instance of an inner class _must_ be associated with an instance of the containing class, and as such has access to the (non-static) fields of the containing object. Inner classes are often used for callbacks.
+>
+> Inner classes can be tricky. Use static nested classes where possible.
+
+### Local classes
+
+Sometimes you may need a class that is used not just in a single class, but in a single _method_ only. In such a case, you can define the class directly in the method. This is a **local class**.
+
+```java
+public class ThreadExample {
+    public static void main(String args[]) {
+        class Task implements Runnable {
+            @Override
+            public void run() {
+                System.out.println("starting");
+                try { Thread.sleep(1000); } catch (InterruptedException e) {}
+                System.out.println("finishing");
+            }
+        }
+
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Task()).start();
+    }
+}
+```
+
+## Anonymous classes
+
+And if you need to define a class for just in a single _expression_ only, you can define a new class as you instantiate it.  This is an **anonymous class**; it doesn't even have a name.  Simply follow the `new` expression with the class body.
+
+```java
+public class ThreadExample {
+    public static void main(String args[]) {
+        for (int i = 0; i < 5; ++i)
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    System.out.println("starting");
+                    try { Thread.sleep(1000); } catch (InterruptedException e) {}
+                    System.out.println("finishing");
+                }
+            }).start();
+    }
+}
+```
+
+> :star: **Hint:** If you're interested in learning more about programming with threads, the canonical book is [_Java Concurrency In Practice_](http://jcip.net.s3-website-us-east-1.amazonaws.com/).
