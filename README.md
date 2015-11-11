@@ -22,9 +22,9 @@
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
 17 | Tues, Dec 1 | 4 |
 18 | Thurs, Dec 3 | 4 |
-19 | Sat, Dec 5 | 4 | Final Mock Interviews
-20 | Sun, Dec 6 | 5 | Final Mock Interviews
-21 | Tues, Dec 8 | 5 |
+19 | Sat, Dec 5 | 4 | 
+20 | Sun, Dec 6 | 5 | 
+21 | Tues, Dec 8 | 5 | Go to Google for 2.2 Demo Day!
 22 | Thurs, Dec 10 | 5 |
 23 | Sat, Dec 12 | 5 |
 24 | Sun, Dec 13 | x | LAST DAY OF CLASS
