@@ -15,7 +15,7 @@
 9 | Tues, Nov 17 | 2 | Object Oriented Programming Review
 10 | Thurs, Nov 19 | 2 | Mock Interviews
 11 | Sat, Nov 21 | 2 | Design Patterns & Testing
-12 | Sun, Nov 22 | 3 | Server-Side Development, End to End
+12 | Sun, Nov 22 | 3 | Tackling Bugs & Performance Issues
 13 | Tues, Nov 24 | 3 | Reflection/Proxy
 14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
