@@ -10,7 +10,7 @@
 4 | Sun, Nov 8 | 1 | [Graphs I](https://drive.google.com/file/d/0B0eZ0hF8kDy_QzdFQ1RMbE43MHM/view?usp=sharing) and [Val](http://www.v-a-l-e-r-i-e.com/about/) from Etsy [(Slides)](/speakers/Val_UX_Talk.pdf) [(Resources)](/speakers/Val_resources) 
 5 | Tues, Nov 10 | 1 | [Static](lessons/5 static.md)
 6 | Thurs, Nov 12 | 1 | Technical Interview Materials with Josh from Underdog.io [(Slides)](/speakers/underdog_deck_updated.pdf)
-7 | Sat, Nov 14 | 1 | HTTPS, Authentication and Authorization
+7 | Sat, Nov 14 | 1 | [HTTPS, Authentication and Authorization](https://drive.google.com/file/d/0B0eZ0hF8kDy_YWpnekNFR0YtdXc/view?usp=sharing)
 8 | Sun, Nov 15 | 2 | Graphs II
 9 | Tues, Nov 17 | 2 | Object Oriented Programming Review
 10 | Thurs, Nov 19 | 2 | Mock Interviews
@@ -37,3 +37,4 @@
 11/13|[HTTP](https://drive.google.com/file/d/0B0eZ0hF8kDy_YjE1SUkxU2hrRkU/view?usp=sharing)  [[SUBMIT HERE]](https://docs.google.com/forms/d/1-c1HXoiklflgSCTxrnJNjmgzOlgRJDCBQSuIqtJC2BQ/viewform)|---
 11/13|[Graphs I](https://drive.google.com/file/d/0B0eZ0hF8kDy_bkZYNFgzWEFpSEU/view?usp=sharing)  [[SUBMIT HERE]](https://docs.google.com/forms/d/1N2aP4B_HRXsjftkGpBrFmeU22M_5dT5Cm6jDxBjfQW0/viewform)|---
 11/17|[More Interview Practice](https://docs.google.com/a/c4q.nyc/forms/d/1KMPO8zXke6DvfvIx8M4gsehnLIJJ4vwZ7KY7CImNIxw/viewform)|---
+11/20|[OAuth](https://drive.google.com/file/d/0B0eZ0hF8kDy_RlY1N0VoVEZYS00/view?usp=sharing) ([gif](https://drive.google.com/file/d/0B0eZ0hF8kDy_bW5mMnhVNUQ4RGs/view?usp=sharing)) [[SUBMIT HERE]]
