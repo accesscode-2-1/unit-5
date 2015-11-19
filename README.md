@@ -13,7 +13,7 @@
 7 | Sat, Nov 14 | 1 | HTTPS, Authentication and Authorization
 8 | Sun, Nov 15 | 2 | Graphs II
 9 | Tues, Nov 17 | 2 | Object Oriented Programming Review
-10 | Thurs, Nov 19 | 2 | Mock Interviews
+10 | Thurs, Nov 19 | 2 | Mock Interviews and [Interview Practice](/lessons/interview_practice.md)
 11 | Sat, Nov 21 | 2 | Design Patterns & Testing
 12 | Sun, Nov 22 | 3 | Tackling Bugs & Performance Issues
 13 | Tues, Nov 24 | 3 | Reflection/Proxy
