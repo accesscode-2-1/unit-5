@@ -25,6 +25,7 @@
 19 | Sat, Dec 5 | 4 | TBD
 20 | Sun, Dec 6 | 5 | TBD
 21 | Tues, Dec 8 | 5 | Go to Google for 2.2 Demo Day!
+-- | Wednesday Dec 9| 5 | Interview prep at Google
 22 | Thurs, Dec 10 | 5 |
 23 | Sat, Dec 12 | 5 |
 24 | Sun, Dec 13 | x | LAST DAY OF CLASS
