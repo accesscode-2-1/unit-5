@@ -11,11 +11,11 @@ Pick one other developer to work with
 
 Dev. 1 will interview dev. 2 using [this question](https://www.interviewcake.com/question/highest-product-of-3)
 
-Then go over the question and solution together and reflect on growth areas
++ Then go over the question and solution together and reflect on growth areas
 
 Dev. 2 will then interview dev. 1 using [this question](https://www.interviewcake.com/question/merging-ranges)
 
-Then go over the question and solution together and reflect on growth areas
++ Then go over the question and solution together and reflect on growth areas
 
 
 Spend the rest of time working through other problems on the same site
