@@ -1,8 +1,8 @@
-###Interview practice
+##Interview practice
 
 While you are upstairs in the Lyft office, you will be practiciting interview questions.
 
-##Format
+###Format
 Pick one other developer to work with
 The developer 1  will be the interviewer
 The developer 2  will be the interviewee
