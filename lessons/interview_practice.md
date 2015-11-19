@@ -5,9 +5,9 @@ While you are upstairs in the Lyft office, you will be practiciting interview qu
 ###Format
 Pick one other developer to work with
 
-The developer 1  will be the interviewer
++The developer 1  will be the interviewer
 
-The developer 2  will be the interviewee
++The developer 2  will be the interviewee
 
 Dev. 1 will interview dev. 2 using [this question](https://www.interviewcake.com/question/highest-product-of-3)
 
