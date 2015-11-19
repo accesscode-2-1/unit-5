@@ -14,16 +14,16 @@
 8 | Sun, Nov 15 | 2 | [Graphs II](https://drive.google.com/file/d/0B0eZ0hF8kDy_d0hlcnFWU2FzMWM/view?usp=sharing)
 9 | Tues, Nov 17 | 2 | Object Oriented Programming Review
 10 | Thurs, Nov 19 | 2 | Mock Interviews
-11 | Sat, Nov 21 | 2 | Design Patterns
-12 | Sun, Nov 22 | 3 | Testing
-13 | Tues, Nov 24 | 3 | Reflection/Proxy
+11 | Sat, Nov 21 | 2 | Java
+12 | Sun, Nov 22 | 3 | Java
+13 | Tues, Nov 24 | 3 | Java
 14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
-17 | Tues, Dec 1 | 4 |
-18 | Thurs, Dec 3 | 4 |
-19 | Sat, Dec 5 | 4 | Tackling Bugs & Performance Issues
-20 | Sun, Dec 6 | 5 | 
+17 | Tues, Dec 1 | 4 | TBD
+18 | Thurs, Dec 3 | 4 | TBD
+19 | Sat, Dec 5 | 4 | TBD
+20 | Sun, Dec 6 | 5 | TBD
 21 | Tues, Dec 8 | 5 | Go to Google for 2.2 Demo Day!
 22 | Thurs, Dec 10 | 5 |
 23 | Sat, Dec 12 | 5 |
