@@ -137,9 +137,35 @@ static int[] expandArray(int[] array, int newSize) {
 }
 ```
 
-## Operations
+## Other operations
 
 The [`java.util.Arrays`](http://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html) class contains a numer of static methods that operate on arrays.  Since Java generics cannot be used with primitive types, this class provides overloads for each primitive array type for most of its methods.
+
+## Arrays and inheritance
+
+> :star: **Note:** This is an advanced topic!
+
+Java allows you to cast a class array to an array of the class's base. For example, with this class hierarchy,
+
+```java
+public class C {}
+public class D extends C{}
+```
+
+Java allows you to cast a `D[]` array to `C[]`.  This leads to a dangerous situation: Java allows you to insert a `C` instance into a `C[]` array, but also promises you that you receive a `D` instance when you index a `D[]` array.  If both types can refer to the same array, there's a contradiction.  Can you see it?
+
+Consider this code:
+
+```java
+D[] dArr = new D[4];   // Create a D array.
+dArr[0] = new D();     // Add a D instance to it.
+C[] cArr = dArr;       // Cast the array to the base class array.
+cArr[1] = new C();     // Add a C instance to the same array.
+D d = dArr[1];         // Extract the C instance as a D.  Yikes!
+```
+
+To avoid this situation, a Java array carries with it the type of objects it can hold, which is specified when the array is created with `new`.  Any insertion of an item to the array is checked against this (dynamic) type, even if the insertion is via an array variable with a base class array type. So, in the code above, the fourth line will raise an `ArrayStoreException`.
+
 
 ## Multidimentional arrays
 
@@ -165,7 +191,42 @@ Java does _not_ support two- or higher-dimensional arrays!  However, you can emu
 
 # Exercises
 
+> :dart: **Exercise:** Reversing an array:
+> 
+> 1. Write a method that accepts an `int[]` and returns a new, reversed array rather than modifying its argument in place.
+> 1. Write a method that accepts an `int[]` and reverses the elements _in place_.
+> 1. Write equivalent _generic_ methods, _e.g._ `reverse<T>(T[] arr)` and `reverseInPlace<T>(T[] arr)`.
+> 
+> Collect your methods (which should be static) into a single class.
+
+<div></div>
+
+> :dart: **Exercise:** A **bit vector** behaves like a list of booleans; however, the booleans are encoded as individual bits in a larger integer type such as `int` or `long`.  This is eight times as efficient as an array of `boolean`, each of which occupies one byte.
+> 
+> Write a `BitVector` class.  It should accept a length, in bits, at construction, and provide `set(index, bit)` and `get(index)` methods, where the individual bits are represented by booleans.  Your class should use about `length / 32` integer values or `length / 64` long values to store the bits.
+
+<div></div>
+
 > :dart: **Exercise:** Write a `Matrix` class that stores a two-dimensional mathematical matrix of `double` values.  Accept the number of rows and columns in the constructor.  Provide a `get(row, col)` accessor and a corresponding `set(row, col, value)`.  Provide a `toString()` that prints matrix out in the traditional format, with "(" and ")" characters on the left and right, respectively.
 
 <div></div>
-> :dart: **Exercise:** 
+
+> :dart: **Exercise:** Implement your own `ArrayList` from scratch.  It should be functionally identical to the original.
+> 
+> 1. Write unit tests for `ArrayList<Double>`.  
+>   - Make sure you test each method.
+>   - Make sure you test cases with empty and non-empty lists.
+>   - Make sure you test error conditions as well as correct usage.
+> 1. Verify that your tests work as expected on the standard `ArrayList` class.
+> 1. Create your own `ArrayList<T>` that implements `List<T>`.  Use IntelliJ to fill in all the methods you need.
+> 1. Implement the methods, running tests as you go.
+
+<div></div>
+
+> :dart: **Exercise:** A **native collection** is a collection class specific to a single native type.  Java developers often use a native collection instead of a generic collection to avoid boxing/unboxing operations, reduce memory use, and improve performance.
+> 
+> Write a `DoubleArrayList` class that accepts and returns `double` values instead of `Double` objects.
+> 
+> Write some simple benchmarks for the basic operations, and compare performance of your class versus `ArrayList<Double>`.
+
+
