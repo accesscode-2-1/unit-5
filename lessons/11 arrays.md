@@ -151,7 +151,7 @@ Java allows you to cast a class array to an array of the class's base. For examp
 
 ```java
 public class C {}
-public class D extends C{}
+public class D extends C {}
 ```
 
 Java allows you to cast a `D[]` array to `C[]`.  This leads to a dangerous situation: Java allows you to insert a `C` instance into a `C[]` array, but also promises you that you receive a `D` instance when you index a `D[]` array.  If both types can refer to the same array, there's a contradiction.  Can you see it?
