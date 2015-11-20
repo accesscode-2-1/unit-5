@@ -16,6 +16,8 @@ An **array** is a special kind of collection in Java. An array has the following
 
 - **homogeneous**: The type of an array must be specified when the array is created. All items in in the array must be of this type. The type may be a primitive type, a class, or even an array type.  (But see below regarding subclasses and class arrays.)
 
+> :star: **Note:** The length of an array is represented by a `int` (which may not be negative), as are indexes.  This means the size of a Java array is limited to (1 << 31) - 1, about  
+
 ## Types 
 
 An array _type_ is written by the base type followed by square brackets.  For example, an array of `boolean` is written `boolean[]`, and an array of `String` is written `String[]`.
