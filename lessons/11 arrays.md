@@ -211,6 +211,8 @@ Java does _not_ support two- or higher-dimensional arrays!  However, you can emu
 
 > :dart: **Exercise:** A **sparse array** is an array that has only a few elements set relative to its length; most elements are 0 (for numeric arrays) or `null` (for object arrays).  A sparse array is represented more efficiently by a sequence of (index, value) pairs.
 > 
+> For example, the array `{ 0, 0, 3, 0, 8, 0, 0 }` could be represented by the pairs (2, 3) and (4, 8), where the first entry in each pair is an index and the second entry is a value.  All other items are assumed to be zero.
+> 
 > Write a method that converts a `double[]` array into a `List<Entry>`, where `Entry` is a class you create that contains an integer index and a double value.  This method should add an entry to the list only for items in the array that are nonzero.
 > 
 > Then write a corresponding method that converts the list of entries back into an explicit array.
