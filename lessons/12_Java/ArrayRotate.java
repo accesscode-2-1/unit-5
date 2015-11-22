@@ -13,9 +13,37 @@ public class ArrayRotate {
   }
 
   private static void testArray(int[] a, int n) {
-    System.out.println(Arrays.toString(a));
-    rotateArrayRight(a, n);
-    System.out.println(Arrays.toString(a));
+    System.out.print(Arrays.toString(a));
+    //rotateArrayRight(a, n);
+    a = rotateArrayRightHans(a, n);
+    System.out.println(" => " + Arrays.toString(a));
+  }
+
+  // alternative approach using a 2nd array
+  private static int[] rotateArrayRightHans(int[] a, int n) {
+    if (n < 0) {
+      throw new IllegalArgumentException("n is negative");
+    }
+
+    int length = a.length;
+    if (length < 2) {
+      return a;
+    }
+    n = n % length;
+    if (n == 0) {
+      return a;
+    }
+
+    // trade-off = fewer lines of code vs extra allocated memory
+    // for large n, the in-place algorithm might perform better
+    int[] a2 = new int[length];
+
+    // copy rightmost of a into leftmost of a2
+    System.arraycopy(a, length - n, a2, 0, n);
+    // copy leftmost of a into rightmost of a2
+    System.arraycopy(a, 0, a2, n, length - n);
+
+    return a2;
   }
 
   private static void rotateArrayRight(int[] a, int n) {
