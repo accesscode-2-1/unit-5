@@ -4,6 +4,8 @@ import java.util.Arrays;
 import java.util.Stack;
 
 public class ArrayRotate {
+  private static final boolean DEBUG = false;
+
   public static void main(String[] args) {
     testArray(new int[]{1, 2, 3}, 1);
     testArray(new int[]{1, 2, 3}, 2);
@@ -21,18 +23,11 @@ public class ArrayRotate {
 
   // alternative approach using a 2nd array
   private static int[] rotateArrayRightHans(int[] a, int n) {
-    if (n < 0) {
-      throw new IllegalArgumentException("n is negative");
+    if(!isRotateNecessary(a, n)) {
+      return a;
     }
 
     int length = a.length;
-    if (length < 2) {
-      return a;
-    }
-    n = n % length;
-    if (n == 0) {
-      return a;
-    }
 
     // trade-off = fewer lines of code vs extra allocated memory
     // for large n, the in-place algorithm might perform better
@@ -47,40 +42,64 @@ public class ArrayRotate {
   }
 
   private static void rotateArrayRight(int[] a, int n) {
-    if (n < 0) {
-      throw new IllegalArgumentException("n is negative");
-    }
-    int length = a.length;
-    if (length < 2) {
-      return;
-    }
-    n = n % length;
-    if (n == 0) {
+    if(!isRotateNecessary(a, n)) {
       return;
     }
 
+    int length = a.length;
     int end = length - 1;
     int start = end - n + 1; // OR ... = length - n
 
-    //System.out.println("start: " + start);
-    //System.out.println("end: " + end);
+    if(DEBUG) {
+      System.out.println("start: " + start);
+      System.out.println("end: " + end);
+    }
 
     // remember last n elements
     Stack<Integer> stack = new Stack<>();
     for (int i = end; i >= start; i--) {
       stack.push(a[i]);
     }
-    //System.out.println("stack: " + stack);
+
+    if(DEBUG) {
+      System.out.println("stack: " + stack);
+    }
 
     // move each element from beginning of array up to (not incl. start)
     for (int i = start - 1; i >= 0; i--) {
       a[i + n] = a[i];
     }
-    //System.out.println(Arrays.toString(a));
+
+    if(DEBUG) {
+      System.out.println(Arrays.toString(a));
+    }
 
     // restore stored elements
     for (int i = 0; i < n; i++) {
       a[i] = stack.pop();
     }
+  }
+
+  // check and see if the given a & n allow us to short-circuit rotation
+  private static boolean isRotateNecessary(int[] a, int n) {
+    if (n < 0) {
+      throw new IllegalArgumentException("n is negative");
+    }
+
+    // if a is empty or contains 1 element, then a rotate is pointless
+    if (a.length < 2) {
+      return false;
+    }
+
+    // suppose a = {1,2,3}
+    // then rot(a,3) == rot(a,6),
+    //      rot(a,4) == rot(a,7),
+    //      etc.
+    n = n % a.length;
+    if (n == 0) {
+      return false;
+    }
+
+    return true;
   }
 }
