@@ -16,7 +16,7 @@
 10 | Thurs, Nov 19 | 2 | Mock Interviews and [Interview Practice](/lessons/interview_practice.md)
 11 | Sat, Nov 21 | 2 | Java
 12 | Sun, Nov 22 | 3 | Java
-13 | Tues, Nov 24 | 3 | Java
+13 | Tues, Nov 24 | 3 | [Arrays](/lessons/11 arrays.md)
 14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
