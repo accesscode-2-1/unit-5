@@ -195,8 +195,8 @@ Java does _not_ support two- or higher-dimensional arrays!  However, you can emu
 
 > :dart: **Exercise:** Reversing an array:
 > 
-> 1. Write a method that accepts an `int[]` and returns a new, reversed array rather than modifying its argument in place.
-> 1. Write a method that accepts an `int[]` and reverses the elements _in place_.
+> 1. Write a method that accepts an `int[]` and returns a new, reversed array.
+> 1. Write a method that accepts an `int[]` and reverses the elements _in place_, i.e. it rearranges elemenets in the array passed to the method.
 > 1. Write equivalent _generic_ methods, _e.g._ `reverse<T>(T[] arr)` and `reverseInPlace<T>(T[] arr)`.
 > 
 > Collect your methods (which should be static) into a single class.
