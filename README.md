@@ -21,13 +21,13 @@
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
 17 | Tues, Dec 1 | 4 | Complexity (big O) and [optimization](https://docs.google.com/document/d/1CGK67zrJy85cr7UOKo_-CPKUoVysLv2gcstD45w2I7g/edit) [(Interview questions)](https://docs.google.com/document/d/1sNmBUZ39Ytygn_S3xSAE6X2PMR4mMdMWQhlwvXnifT0/edit)
-18 | Thurs, Dec 3 | 4 | TBD
-19 | Sat, Dec 5 | 4 | TBD
-20 | Sun, Dec 6 | 5 | TBD
+18 | Thurs, Dec 3 | 4 | Review Session: Data Structures
+19 | Sat, Dec 5 | 4 | In-Class Project
+20 | Sun, Dec 6 | 5 | In-Class Project
 21 | Tues, Dec 8 | 5 | Go to Google for 2.2 Demo Day!
 -- | Wednesday Dec 9| 5 | Interview prep at Google
-22 | Thurs, Dec 10 | 5 |
-23 | Sat, Dec 12 | 5 |
+22 | Thurs, Dec 10 | 5 | Assessment Part I
+23 | Sat, Dec 12 | 5 | Assessment Part II
 24 | Sun, Dec 13 | x | LAST DAY OF CLASS
 
 
