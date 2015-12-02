@@ -20,7 +20,7 @@
 14 | Thurs, Nov 26 | 3 | Thanksgiving Break - No class
 15 | Sat, Nov 28 | 3 | Thanksgiving Break - No class
 16 | Sun, Nov 29 | 4 | Thanksgiving Break - No class
-17 | Tues, Dec 1 | 4 | Complexity (big O) and [optimization](https://docs.google.com/document/d/1CGK67zrJy85cr7UOKo_-CPKUoVysLv2gcstD45w2I7g/edit)
+17 | Tues, Dec 1 | 4 | Complexity (big O) and [optimization](https://docs.google.com/document/d/1CGK67zrJy85cr7UOKo_-CPKUoVysLv2gcstD45w2I7g/edit) [(Interview questions)](https://docs.google.com/document/d/1sNmBUZ39Ytygn_S3xSAE6X2PMR4mMdMWQhlwvXnifT0/edit)
 18 | Thurs, Dec 3 | 4 | TBD
 19 | Sat, Dec 5 | 4 | TBD
 20 | Sun, Dec 6 | 5 | TBD
