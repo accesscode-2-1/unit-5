@@ -42,7 +42,7 @@ ACTIV -- E
 
 ## Tries
 
-A _trie_ (pronounced "try") is this data structure taken to the logical extreme: each node in the tree represents only a _single letter_.  It may have up to 26 children, representing each of the subsequent letters of the alphabet.
+A _trie_ (commonly pronounced "try", [originally pronounced "tree"](https://en.wikipedia.org/wiki/Trie)) is this data structure taken to the logical extreme: each node in the tree represents only a _single letter_.  It may have up to 26 children, representing each of the subsequent letters of the alphabet.
 
 (In general, a node in a trie may represent a different fixed unit of information.  For example, in a _binary trie_, each node represents onebit and may have two children, while in a _decimal trie_, each node represents one decimal digit and may have ten children.)
 
