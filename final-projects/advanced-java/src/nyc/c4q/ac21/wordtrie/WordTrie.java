@@ -11,6 +11,7 @@ public class WordTrie {
 
     public boolean contains(String string) {
         // FIXME: Implement this.
+        return false;
     }
 
     public List<String> toList() {        
