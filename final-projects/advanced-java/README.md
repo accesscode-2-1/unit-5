@@ -72,7 +72,7 @@ We've provided a simple test program that loads the words in this dictionary, pr
 
 The sample program is in `nyc.c4q.ac21.wordtrie.Main`.
 
-> **Step 2:** Compile, run, and try out the sample program.
+> **Step 2:** Compile, run, and try out the sample program. Read it over, and make sure you understand how it works.
 
 ## Implementation
 
@@ -84,7 +84,7 @@ We've provided a skeleton class `WordTrie` that shows the methods you must imple
 > 
 > When printing out the contents of the dictionary, you'll have to use the `WordTrie.toList()` method, since `WordTrie` isn't directly iterable with Java's "for each" statement.
 
-Now if you run the program, the word trie will appear to be empty, as `add()` doesn't actually add anything.
+Now if you run the program, the dictionary will appear to be empty, as `add()` doesn't actually add anything.
 
 > **Step 4:** Decide how to implement a node in your trie. You may choose to create a new class for this. Each node should use an array of exactly 26 elements to store its children. If you create a new class, `WordTrie` should have a `root` attribute that references the root node.
 >
@@ -93,6 +93,8 @@ Now if you run the program, the word trie will appear to be empty, as `add()` do
 If you are stuck at this point, see the hints below.
 
 > **Step 5:** Implement the `contains()` method. The logic should resemble that of `add()`.
+
+Now try out your trie. It won't print out the full list of words, but test whether it recognizes words in the dictionary correctly. If not, debug it!
 
 ## Challenge problem
 
