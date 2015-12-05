@@ -70,7 +70,7 @@ To keep things simple, we will convert all words to upper case, and omit any wor
 
 We've provided a simple test program that loads the words in this dictionary, prints them out, and then enters into a loop that asks you for a word and checks if it is in the dictionary.  Simply give an empty input to end the program.  The test program uses a `HashSet<String>` to store the words.
 
-The sample program is in `nyc.c4q.ac21.wordtrie.Main`.
+The sample program is in [`nyc.c4q.ac21.wordtrie.Main`](src/nyc/c4q/ac21/wordtrie/Main.java).
 
 > **Step 2:** Compile, run, and try out the sample program. Read it over, and make sure you understand how it works.
 
@@ -78,7 +78,7 @@ The sample program is in `nyc.c4q.ac21.wordtrie.Main`.
 
 Your goal for this problem will be to replace `HashSet<String>` with a new class that implements the necessary behavior with a trie.  
 
-We've provided a skeleton class `WordTrie` that shows the methods you must implement. You may of course add a constructor and any helper methods you may need, in addition to attributes.
+We've provided a skeleton class [`WordTrie`](src/nyc/c4q/ac21/wordtrie/WordTrie.java) that shows the methods you must implement. You may of course add a constructor and any helper methods you may need, in addition to attributes.
 
 > **Step 3:** Replace `HashSet<String>` with `WordTrie` in the `Main` class. 
 > 
