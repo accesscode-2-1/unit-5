@@ -5,19 +5,19 @@ import java.util.List;
 
 public class WordTrie {
 
-    public void add(String string) {
+    public void add(String word) {
         // FIXME: Implement this.
     }
 
-    public boolean contains(String string) {
+    public boolean contains(String word) {
         // FIXME: Implement this.
         return false;
     }
 
     public List<String> toList() {        
-        List<String> results = new ArrayList<String>();
+        List<String> words = new ArrayList<String>();
         // FIXME: Implement this.
-        return results;
+        return words;
     }
 
 }
