@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class NumberGame {
 
     public static void main(String[] args) {
-        // Promt for and read the number.
+        // Prompt for and read the number.
         final Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int number = scanner.nextInt();
