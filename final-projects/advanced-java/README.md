@@ -142,3 +142,8 @@ Also, go through your code and verify the following:
 - Any class members that can be `static` should be.
 - All class members should have the most restrictive permission possible, so don't make something `public` if it can be `private` instead.
 
+# Solution
+
+[This](src/WordTrie.java) is a straightforward solution that uses a separate class to represent the nodes of the trie.  It uses iteration for `add()` and `contains()`, but a recursive helper function for `toList()`.
+
+[This](src/RecursiveWordTrie.java) is a solution that uses recursion for `add()` and `contains()` as well.  This solution doesn't have a separate node class; it uses a recursive data structure for the trie class itself.
